@@ -1,19 +1,25 @@
-import express rom "express";
+import express from "express";
 import cors from "cors";
+import path from "path";
+import { fileURLToPath } from "url";
 
 const app = express();
 
-// ⚡ Allow all origins
-app.use(cors({
-  origin: "*",                // allow requests from any domain
-  methods: ["GET", "POST"],   // allow only these HTTP methods (adjust as needed)
-  allowedHeaders: ["Content-Type", "Authorization"] // allow these headers
-}));
+// Enable CORS for all origins
+app.use(cors({ origin: "*" }));
 
-// Example endpoint
-app.get("/", (req, res) => {
-  res.json({ message: "Hello from DigitalOcean!" });
+// Resolve __dirname in ES module
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Serve all files in JS folder at the root path
+app.use(express.static(path.join(__dirname, "JS")));
+
+// Optional: test route
+app.get("/ping", (req, res) => {
+  res.json({ message: "Server running" });
 });
 
 const port = process.env.PORT || 8080;
 app.listen(port, () => console.log(`Server running on port ${port}`));
+
