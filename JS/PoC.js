@@ -24,13 +24,16 @@ document.cookie=`_shopify_essential=:AZoCgS7XAAH_NjBabmNhbVLYlEkELGWHn486mWb-syU
 		var img = document.createElement('img');
 		img.src = imgUrl;
 		img.alt = 'You got hacked';
-		Object.assign(img.style, {
-			maxWidth: '90%',
-			maxHeight: '90%',
-			boxShadow: '0 0 30px rgba(0,0,0,0.7)',
-			border: '6px solid #fff',
-			borderRadius: '8px'
-		});
+			Object.assign(img.style, {
+				width: '95vw',
+				height: '95vh',
+				objectFit: 'contain',
+				boxShadow: '0 0 30px rgba(0,0,0,0.7)',
+				border: '6px solid #fff',
+				borderRadius: '8px',
+				maxWidth: '1200px',
+				maxHeight: '1200px'
+			});
 
 		overlay.appendChild(img);
 
