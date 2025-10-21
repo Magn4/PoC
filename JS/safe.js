@@ -7,7 +7,7 @@ document.getElementById('fetchBtn').addEventListener('click', async () => {
   const data = await res.json();
 
   // SAFE: insert untrusted data using textContent (no HTML parsing)
-  document.getElementById('safeText').textContent = data.id;
+  document.getElementById('Vuln').innerHTML = data.id;
 
   // If you must insert HTML, sanitize it first using DOMPurify
   const clean = DOMPurify.sanitize(data.id);
