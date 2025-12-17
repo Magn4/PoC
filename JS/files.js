@@ -15,4 +15,4 @@ for (let i = 0; i < COOKIE_COUNT; i++) {
   document.cookie = cookie;
 }
 
-console.log('Total cookies now:', document.cookie.split(';').length);
+alert('Total cookies Added:', document.cookie.split(';').length);
