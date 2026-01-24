@@ -6,7 +6,8 @@ import { fileURLToPath } from "url";
 const app = express();
 
 // Enable CORS for all origins
-app.use(cors({ origin: "*" }));
+// app.use(cors({ origin: "*" }));
+app.use(cors({ origin: "https://tagging.wetransfer.com" }));
 
 // Resolve __dirname in ES module
 const __filename = fileURLToPath(import.meta.url);
